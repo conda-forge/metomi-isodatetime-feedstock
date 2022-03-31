@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://github.com/metomi/isodatetime
-  license: LGPL-3.0
+  license: LGPL-3.0-only
   license_family: GPL
   license_file: LICENSE
   summary: Python ISO 8601 date time parser and data model/manipulation utilities
