@@ -1,5 +1,5 @@
 {% set name = "metomi-isodatetime" %}
-{% set version = "1!2.0.2" %}
+{% set version = "1!3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bf32dbc6e519ad83640af2be11a1f38a4dc43ae2cf6f800bdb230b5ee23d5a4c
+  sha256: 2141e8aaa526ea7f7f1cb883e6c8ed83ffdab73269658d84d0624f63a6e1357e
 
 build:
   noarch: python
@@ -29,10 +29,11 @@ test:
     - metomi.isodatetime
   commands:
     - isodatetime --help
+    - test "$(isodatetime 2000 --offset -P1Y)" -eq 1999
 
 about:
   home: https://github.com/metomi/isodatetime
-  license: LGPL-3.0
+  license: LGPL-3.0-only
   license_family: GPL
   license_file: LICENSE
   summary: Python ISO 8601 date time parser and data model/manipulation utilities
@@ -45,6 +46,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - kinow
     - wxtim
     - oliver-sanders
