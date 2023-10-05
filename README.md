@@ -1,11 +1,11 @@
-About metomi-isodatetime
-========================
+About metomi-isodatetime-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metomi-isodatetime-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/metomi/isodatetime
 
-Package license: LGPL-3.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metomi-isodatetime-feedstock/blob/main/LICENSE.txt)
+Package license: LGPL-3.0-only
 
 Summary: Python ISO 8601 date time parser and data model/manipulation utilities
 
@@ -152,6 +152,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@MetRonnie](https://github.com/MetRonnie/)
 * [@oliver-sanders](https://github.com/oliver-sanders/)
 * [@wxtim](https://github.com/wxtim/)
 
